@@ -453,7 +453,7 @@ public class ApiGateway extends AWSTools {
                     .withRestApiId(amazonApi.getId())
                     .withResourceId(apiGatewayResource.getId())
                     .withHttpMethod(httpMethod)
-                    .withApiKeyRequired(false)
+                    .withApiKeyRequired(true)
                     .withAuthorizationType(AUTHORIZATION_TYPE)
                     .withRequestParameters(getRequestParameters(method))
             );
